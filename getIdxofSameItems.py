@@ -1,6 +1,6 @@
 import torch
 def getIdxofSameItems(a):
-#given a vector, output the indexes of the items which have the same value
+#for a given vector, output the indexes of the items which have the same value
     co = a.unsqueeze(0)-a.unsqueeze(1)
     uniquer = co.unique(dim=0)
     out = []
